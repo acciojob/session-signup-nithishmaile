@@ -11,7 +11,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 8px;
-  margin-bottom: 10px;
 }
 
 label {
@@ -22,9 +21,8 @@ label {
 
 button {
   background-color: #007bff;
-  color: white;
+  color: #ffffff;
   padding: 12px 24px;
   border-radius: 4px;
   font-weight: 700;
-  border: 0;
 }
