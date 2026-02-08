@@ -1,8 +1,57 @@
 <html>
   <head>
     <title>Session Signup</title>
+	<style>
+		form{
+			background-color:#f8f9fa;
+			border:1px solid #ccc;
+			border-radius:4px;
+			padding:2rem;
+			width:300px;
+		}
+		input{
+			width:100%;
+			border:1px solid #ccc;
+			border-radius:4px;
+			padding:0.5 rem;
+			margin-top:2px;
+			margin-bottom:10px;
+		}
+		label{
+			margin-bottom:0.5 rem;
+			font-size:1.2 rem;
+			font-style:bold;
+		}
+		button{
+			background-color:#007bff;
+			color:white;
+			padding:0.75 rem 1.5 rem;
+			border-radius:4px;
+			font-style:bold;
+			border-width:0px;
+		}
+	</style>
   </head>
   <body>
     <!-- Write your code here -->
+	  <form id="myForm">
+		  <label for="name">Name:</label>
+		  <br/>
+		  <input type="text" id="name" required/>
+		  <br/>
+		  <label for="email">Email:</label>
+		  <br/>
+		  <input type="text" id="email" required/>
+		  <br/>
+		  <label for="password">Password:</label>
+		  <br/>
+		  <input type="password" id="password" required/>
+		  <br/>
+		  <label for="confirm-password">Confirm Password:</label>
+		  <br/>
+		  <input type="password" id="confirm-password" required/>
+		  <button id="submit" type="submit">Sign Up</button>
+	  </form>
+	  <script src="index.js"></script>
   </body>
 </html>
