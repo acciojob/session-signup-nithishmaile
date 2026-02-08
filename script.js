@@ -1,17 +1,23 @@
-//your JS code here. If required.
-const form=document.getElementById("myForm");
+const form = document.getElementById("signup-form");
 
-function onSubmitForm(e){
-	e.preventDefault()
-	const name=e.target[0].value
-	const email=e.target[1].value
-	const password=e.target[2].value
-	const confirmPassword=e.target[3].value
-	if(password===confirmPassword){
-		sessionStorage.setItem("user",JSON.stringify({name,email,password}))
-		return
-	}
-	alert("Passwords do not match")
+function onSubmitForm(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirm-password").value;
+
+  if (password !== confirmPassword) {
+    alert("Passwords do not match");
+    return;
+  }
+
+  sessionStorage.setItem("name", name);
+  sessionStorage.setItem("email", email);
+  sessionStorage.setItem("password", password);
+
+  alert("Sign up successful!");
 }
 
-form.addEventListener("submit",onSubmitForm)
+form.addEventListener("submit", onSubmitForm);
